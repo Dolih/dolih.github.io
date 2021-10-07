@@ -15,7 +15,6 @@
   top: 0;
   position: fixed;
   display: flex;
-  transition: all 0.5s ease;
   box-shadow: 0em 0.4em 5px rgba(10, 10, 10, 0.1);
 }
 .menu-area {
