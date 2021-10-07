@@ -1,16 +1,4 @@
-// var header = $('.menu'),
-//     scrollPrev = 0;
 
-// $(window).scroll(function() {
-//     var scrolled = $(window).scrollTop();
-
-//     if ( scrolled > 75 && scrolled > scrollPrev ) {
-//         header.addClass('out');
-//     } else {
-//         header.removeClass('out');
-//     }
-//     scrollPrev = scrolled;
-// });
 
 let films = [
     { text: 'Довод', image: 'https://code.s3.yandex.net/web-code/procrastinate/5.png', inf: 'После теракта в киевском оперном театре агент ЦРУ объединяется с британской разведкой, чтобы противостоять русскому олигарху, который сколотил состояние на торговле оружием. Для этого агенты используют инверсию времени — технологию будущего, позволяющую времени идти вспять.', href:'https://www.kinopoisk.ru/film/938643/' },
