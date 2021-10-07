@@ -20,8 +20,14 @@
   top: 0;
   position: fixed;
   display: flex;
+  transition: all .5s ease;
   box-shadow:0.0em 0.4em 5px rgba(10,10,10,0.1);
 }
+
+.menu.out{
+  transform: translateY(-100%);
+}
+
 .menu-area{
   display: flex;
   height: 100%;
@@ -33,6 +39,9 @@
   padding: 0 20px;
 }
 
+.no-left{
+
+}
 
 .menu-area:hover{
   background-color: rgba(25, 25, 25, .8);
