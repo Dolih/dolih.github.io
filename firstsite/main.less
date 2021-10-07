@@ -1,3 +1,8 @@
+@font-face {
+  src: url(https://code.s3.yandex.net/web-code/fonts/SuisseIntl-Book.woff);
+  font-family: 'Suisse';
+  font-weight: normal;
+}
 .font(@fz:24px){
   font-size: @fz;
   font-family: Tahoma, SansSerif;
@@ -11,12 +16,15 @@ body{
   -webkit-font-smoothing: antialiased;
   position: relative;
   box-sizing: border-box;
+  font-family: 'Suisse';
+  color:white;
+  font-size: 24px;
 
 
 }
 .section{
   padding: 40px 0;
-  .font(24px);
+
 }
 .head{
   background-color: #000000;
@@ -57,8 +65,8 @@ body{
   text-align: justify;
 }
 .btn{
-  color: black;
-  font-weight: 900;
+  color: #2a2a2a;
+  font-size: 20px;
   margin-top: 20px;
   border: none;
   background-color:rgba(255, 255, 255, 0.9 ) ;
@@ -73,7 +81,8 @@ body{
 .inf-card{
   box-shadow: 4px 4px 20px rgba(250, 250, 250, .4);
   margin: 20px 0;
-  padding: 20px;
+  line-height: 40px;
+  padding: 20px 20px 20px;
 }
 //@background:#0f0f0f;
 //.header {
