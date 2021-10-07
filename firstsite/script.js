@@ -1,3 +1,17 @@
+var header = $('.menu'),
+    scrollPrev = 0;
+
+$(window).scroll(function() {
+    var scrolled = $(window).scrollTop();
+
+    if ( scrolled > 75 && scrolled > scrollPrev ) {
+        header.addClass('out');
+    } else {
+        header.removeClass('out');
+    }
+    scrollPrev = scrolled;
+});
+
 let films = [
     { text: 'Довод', image: 'https://code.s3.yandex.net/web-code/procrastinate/5.png', inf: 'После теракта в киевском оперном театре агент ЦРУ объединяется с британской разведкой, чтобы противостоять русскому олигарху, который сколотил состояние на торговле оружием. Для этого агенты используют инверсию времени — технологию будущего, позволяющую времени идти вспять.', href:'https://www.kinopoisk.ru/film/938643/' },
     { text: 'Титаник', image: 'https://code.s3.yandex.net/web-code/procrastinate/2.png', inf: 'В первом и последнем плавании шикарного «Титаника» встречаются двое. Пассажир нижней палубы Джек выиграл билет в карты, а богатая наследница Роза отправляется в Америку, чтобы выйти замуж по расчёту. Чувства молодых людей только успевают расцвести, и даже не классовые различия создадут испытания влюблённым, а айсберг, вставший на пути считавшегося непотопляемым лайнера.', href:'https://www.kinopoisk.ru/film/938643/' },
@@ -23,10 +37,10 @@ button_film.addEventListener('click', function (){
     smoothly (card_inf_film, 'textContent', randomElement.inf);
 
 
-    if (randomElement.inf.length > 100) {
-        card_inf_film.style.fontSize = '20px';
+    if (randomElement.inf.length > 250) {
+        card_inf_film.style.fontSize = '18px';
     } else {
-        card_inf_film.style.fontSize = '24px';
+        card_inf_film.style.fontSize = '22px';
     }
 });
 
